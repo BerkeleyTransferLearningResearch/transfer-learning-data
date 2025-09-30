@@ -1,6 +1,6 @@
-## Office-31 Dataset Overview
+## Transfer Learning Dataset Overview
 
-Office-31 is a domain adaptation dataset that contains data from three different domains:
+Transfer learning dataset is a domain adaptation dataset that contains data from three different domains:
 - **Amazon**: Product images downloaded from the Amazon website  
 - **DSLR**: Images taken with a digital single-lens reflex camera  
 - **Webcam**: Images taken with a webcam  
@@ -16,7 +16,7 @@ Office-31 is a domain adaptation dataset that contains data from three different
 | **Total** | **4,110**       | **100%**   |
 
 ### Category Distribution
-The dataset contains 31 office item categories, with the following distribution across the three domains:
+The dataset contains 31 item categories, with the following distribution across the three domains:
 
 | Category Name | Amazon | DSLR | Webcam | Total |
 |---------------|--------|------|--------|-------|
