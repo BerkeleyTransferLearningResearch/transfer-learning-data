@@ -100,7 +100,7 @@ python main.py --summary --out_dir exp_out
 
 | Parameter | Type | Default | Description |
 |------|------|--------|------|
-| `--splits` | float[] | `[0.1, 0.3, 0.5, 0.7, 0.9]` | Training set ratio list (based on 90% candidate set) |
+| `--splits` | float[] | `[0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]` | Training set ratio list (based on training set) |
 | `--epochs_finetune` | int[] | `[10, 20, 30]` | Fine-tuning epochs list |
 | `--epochs_pretrain` | int | `50` | Pretraining epochs |
 | `--batch_size` | int | `32` | Batch size |
@@ -306,53 +306,4 @@ python main.py \
 # Will transfer to dataset2 and dataset3 separately
 ```
 
-## 🐛 Troubleshooting
 
-### 1. CUDA Out of Memory
-
-```bash
-# Reduce batch_size
-python main.py --batch_size 16
-
-# Or disable AMP
-python main.py --no_amp
-```
-
-### 2. Dataset Class Inconsistency
-
-Ensure all datasets have the same class structure:
-```
-dataset/
-├── class1/
-├── class2/
-└── class3/
-```
-
-### 3. Slow Training
-
-```bash
-# Increase num_workers
-python main.py --num_workers 8
-
-# Enable AMP (enabled by default)
-python main.py  # AMP enabled by default
-```
-
-## 📚 Related Files
-
-- `config.py`: Configuration file containing dataset paths and default parameters
-- `main.py`: Main program
-- `exp_out/`: Experiment results output directory
-- `summary.csv`: Experiment results summary
-
-## 📄 License
-
-Please add license information according to your needs.
-
-## 🤝 Contributing
-
-Issues and Pull Requests are welcome!
-
-## 📧 Contact
-
-For questions, please contact the project maintainer.
