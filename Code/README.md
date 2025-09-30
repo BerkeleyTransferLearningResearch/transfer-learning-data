@@ -101,7 +101,7 @@ python main.py --summary --out_dir exp_out
 | Parameter | Type | Default | Description |
 |------|------|--------|------|
 | `--splits` | float[] | `[0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]` | Training set ratio list (based on training set) |
-| `--epochs_finetune` | int[] | `[10, 20, 30]` | Fine-tuning epochs list |
+| `--epochs_finetune` | int[] | `[100]` | Fine-tuning epochs list |
 | `--epochs_pretrain` | int | `50` | Pretraining epochs |
 | `--batch_size` | int | `32` | Batch size |
 | `--lr` | float | `0.001` | Learning rate |
