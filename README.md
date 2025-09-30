@@ -90,23 +90,3 @@ The dataset contains 31 item categories, with the following distribution across 
 1. **Amazon Domain**: Most categories have 90–100 samples, relatively balanced  
 2. **DSLR Domain**: Sample counts range from 7–31, larger variation  
 3. **Webcam Domain**: Sample counts range from 11–43, relatively balanced  
-
-## File Structure
-
-```
-Office-31/
-├── Data/
-│   ├── amazon/          # 2,817 images
-│   │   ├── back_pack/   # 92 images
-│   │   ├── bike/        # 82 images
-│   │   └── ...          # other 29 categories
-│   ├── dslr/            # 498 images
-│   │   ├── back_pack/   # 12 images
-│   │   ├── bike/        # 21 images
-│   │   └── ...          # other 29 categories
-│   └── webcam/          # 795 images
-│       ├── back_pack/   # 29 images
-│       ├── bike/        # 21 images
-│       └── ...          # other 29 categories
-└── office31_counts.csv  # Detailed statistics
-```
