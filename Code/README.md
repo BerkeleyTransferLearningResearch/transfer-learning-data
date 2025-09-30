@@ -213,49 +213,6 @@ Contains summary information of all experiments, sorted by:
 3. split
 4. epochs_finetune
 
-## 🔬 Advanced Features
-
-### 1. Stratified Sampling
-
-Automatically ensures consistent class proportions in training/test sets:
-
-```python
-# Fixed test set 10%, training candidate set 90%
-# split parameter controls what proportion of training candidate to use
-```
-
-### 2. Balanced Stratified Sampling (Multiple Dataset Merging)
-
-When merging multiple datasets, ensure equal number of samples from each dataset in each class:
-
-```python
-# Automatically balance contributions from different datasets
-target_mode="merged"
-```
-
-### 3. Multi-Epoch Testing
-
-One training session, test at multiple epoch points:
-
-```bash
-python main.py --epochs_finetune 10 20 30 40 50
-# Will save test results at epochs 10, 20, 30, 40, 50 respectively
-```
-
-### 4. Skip Completed Experiments
-
-Automatically detect existing result files and skip duplicate experiments:
-
-```python
-# If output file already exists, automatically skip that experiment
-```
-
-### 5. Enhanced Classification Report
-
-In addition to traditional metrics, also includes:
-- **Specificity**: TNR, True Negative Rate
-- **Balanced Accuracy**: (TPR + TNR) / 2
-- **Per-class OVR-AUC**: One-vs-Rest AUROC
 
 ## 📝 Examples
 
