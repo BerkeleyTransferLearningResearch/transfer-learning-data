@@ -66,7 +66,7 @@ DATASETS_MAP = {
 
 ```bash
 # Activate conda environment
-conda activate mlp
+conda activate your_environment
 
 # Run with default configuration
 python main.py
