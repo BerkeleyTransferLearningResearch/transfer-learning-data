@@ -42,7 +42,7 @@ class DatasetConfig:
     """Dataset path configuration"""
     
     # Office-31 dataset path
-    BASE_PATH = '/home/exp/exp/ruih/newdr/Office-31-20250831T042022Z-1-001/Office-31/Data'
+    BASE_PATH = 'Dataset/TL_Data'
     
     DATASETS_MAP = {
         "amazon": f'{BASE_PATH}/amazon',
